@@ -63,7 +63,7 @@ while True:
     end_date.send_keys(exact_end_date)
     find_element_click("//button[@class='applyBtn btn btn-sm btn-success']")
     find_element_click("//h2[@class='mobile-filters']")  # close filter option
-    if exact_start_date != "26/11/2021":
+    if exact_start_date != "07/12/2021":
         time.sleep(5)
         try:
             data = driver.find_element(By.XPATH, '//span[@class="application-count"]').text
@@ -85,5 +85,5 @@ while True:
 
         number += 5
         print(sum(total_data))
-        if exact_start_date == "26/11/2021":
+        if exact_start_date == "07/12/2021":
             break
